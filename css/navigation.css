@@ -44,7 +44,7 @@
         min-width: 0; /*auto를 쓰면 안되나?*/
     }
 }
-@media screen and (max-width: 412px) {
+@media screen and (max-width: 500px) {
     .nav__wrapper {
         display: none;
     }
