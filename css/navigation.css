@@ -41,7 +41,7 @@
         display: none;
     }
     .nav__wrapper{
-        min-width: 0; /*auto를 쓰면 안되나?*/
+        min-width: 0;
     }
 }
 @media screen and (max-width: 500px) {
