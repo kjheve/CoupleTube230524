@@ -1,0 +1,51 @@
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    /* header가 z-index가 더 높기 때문에
+    겹칠 때 header가 더 우선적으로 전면에 보임 */
+}
+.nav__wrapper {
+    min-width: 200px;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    padding: 80px 0 0 0;
+    list-style: none;
+    /* 불릿, 번호 등 제거 */
+}
+
+.nav__wrapper li {
+    display: flex;
+    padding: 10px 16px 10px;
+}
+.nav__wrapper li:hover {
+    background-color: #eaeaea;
+}
+
+.nav__icon {
+    border: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+}
+.nav__menu {
+    margin: 0 0 0 8px;
+    font-family: "Gugi", sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    background-color: transparent;
+}
+
+@media screen and (max-width: 800px) {
+    .nav__menu {
+        display: none;
+    }
+    .nav__wrapper{
+        min-width: 0; /*auto를 쓰면 안되나?*/
+    }
+}
+@media screen and (max-width: 400px) {
+    .nav__wrapper {
+        display: none;
+    }
+}
